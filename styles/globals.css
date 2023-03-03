@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    scroll-behavior:smooth;
+}
+.dis-name .name:hover + .arrow {
+    transform: rotate(540deg);
+}
+.Rayhan{
+    animation: up 2s infinite;
+}
+@keyframes up {
+    0%{
+    transform : translateY(0)    
+    }
+    50%{
+    transform : translateY(-0.5rem)
+    }
+    90%{
+        transform : translateY(0)    
+    }
+    100%{
+        transform : translateY(0)    
+    }
+}
+.workBanner{
+        font-size: 20px;
+        
+        font-family: sans-serif;
+}
+.workBanner:after{
+    content:'';
+    display:block;
+    border-bottom:3px solid #c0c0c0;
+    border-radius: 10px;
+    width: 15%;
+}
+
+.paw{
+    animation : shake 4s infinite;
+}
+
+@keyframes shake{
+    0%{
+        transform: rotate(0deg)
+    }
+    50%{
+        transform:rotate(-25deg)
+    }
+    60%{
+        transform:rotate(-15deg)
+    }
+    65%{
+        transform:rotate(-20deg)
+    }
+    70%{
+        transform:rotate(-15deg)
+    }
+    75%{
+        transform:rotate(-20deg)
+    }
+    80%{
+        transform:rotate(-15deg)
+    }
+    85%{
+        transform:rotate(-10deg)
+    }
+    100%{
+        transform:rotate(0deg)
+    }
+    
+}
+.btnBase .textBtn:hover ~ .arrowBtnBanner{
+    margin-left:10px;
+    transition:ease 100ms;
+}
+
+.list-track::after{
+    content:"";
+    position:absolute;
+    background:#fff;
+    width:3px;
+    height: calc(100% - 30px);
+    top: 0;
+    z-index : 1;
+}
+
+.list-track p::before{
+    content:"";
+    position:absolute;
+    height:18px;
+    width:18px;
+    border-radius:100%;
+    left:0;
+    margin-left:-8px;
+    border : 4px solid #fff;
+    background:#1d283a;
+    margin-top:-3px;
+    z-index:2;
+}
+
+.list-track li{
+    margin-left:50px;
+    padding: ;
+    margin-top:29px;
+}
+
+
